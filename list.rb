@@ -15,16 +15,18 @@ compute_client = Fog::Compute.new(:provider => :openstack,
 
 servers = compute_client.servers
 
+p compute_client.list_servers
+
 servers.each do |server|
-p groups = server.service.list_security_groups(server.id).body['security_groups']
+  groups = server.service.list_security_groups(server.id).body['security_groups']
 
   groups.each do |group|
     p group['name']
   end
 
   net = compute_client.networks
-  p net.server = server
-  p net.methods
+#  p net.server = server
+#  p net.methods
 end
 
 
