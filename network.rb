@@ -12,4 +12,4 @@ net_cli = Fog::Network.new(:provider => :openstack,
                        :openstack_api_key  => ENV['OS_PASSWORD']  ,
                        :openstack_username => ENV['OS_USERNAME']  ,
                        :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/")
-netids = net_cli.list_networks.body['networks'].map{|v| v['id']}
+p netids = net_cli.list_networks.body['networks'].map{|v| v['id']}

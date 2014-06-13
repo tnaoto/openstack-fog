@@ -18,3 +18,7 @@ compute_client.servers.each do |server|
 
 #p tmp = tmp + ":" + server.security_groups.select{|group| group.name}
 end
+
+compute_client.security_groups.each do |security_group|
+  p security_group
+end
