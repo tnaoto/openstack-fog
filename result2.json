@@ -1,0 +1,322 @@
+{
+    "token": {
+        "catalog": [
+            {
+                "endpoints": [
+                    {
+                        "id": "8952c085755642c6868266faef7d6584",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8777"
+                    },
+                    {
+                        "id": "9e0778a12b3a42c68cd4361debb874b7",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8777"
+                    },
+                    {
+                        "id": "b0c561a19904468eb844154bbe45ffe9",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8777"
+                    }
+                ],
+                "id": "2a53fb7188964b84bf9655a6dd964367",
+                "type": "metering"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "1d5ed4b9e81047c49a71bc7ef8dbbfc8",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8004/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "e161dcec27df4f4f9badb250ee4c21f9",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8004/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "ee0cad15f47745dd8e8f2b279935f6c0",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8004/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    }
+                ],
+                "id": "3c2ef37045524f65ba600ee5e478192b",
+                "type": "orchestration"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "00517a70f71e4ad48f5bf25654e7e142",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080"
+                    },
+                    {
+                        "id": "0e28f99019d7411393c4e40e54b75c8a",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080"
+                    },
+                    {
+                        "id": "196c3f3600e649b7be51bf1a7b16b3c3",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080"
+                    }
+                ],
+                "id": "4189776c4ebd4d3c97822e474f1d2d87",
+                "type": "s3"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "70ad2fc09f7448919008a95d3ef1ee3c",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8774/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "88d51d38fcf7404295b58130ab11915d",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8774/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "bdeb54b9f62d444188b534fd4d7b085f",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8774/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    }
+                ],
+                "id": "4e90c2cf3d064234a7bdc5e7d29ee895",
+                "type": "compute"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "12851328b7d848308157bf5b69691c94",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8773/services/Admin"
+                    },
+                    {
+                        "id": "9b378730ef764980ad5bf8e88465a2f2",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8773/services/Cloud"
+                    },
+                    {
+                        "id": "dbb09a5fef314d42a568e6101d44c06a",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8773/services/Cloud"
+                    }
+                ],
+                "id": "7ae8dd900fe74be49ced8445f3de53ad",
+                "type": "ec2"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "2b96ce560ff742bba434a751c3f7fe81",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080/"
+                    },
+                    {
+                        "id": "cae501fb098c4619a6fc12f3dd458648",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080/v1/AUTH_33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "ff9d0682d2694968bff52960a9532bc6",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8080/v1/AUTH_33f91e7118fe4a6a837bc5d865b3b325"
+                    }
+                ],
+                "id": "7bfe7f508b3b43e3851b4a443984129e",
+                "type": "object-store"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "24f145dbcc9c48899a318bfaf84e3af1",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "76049fb7348d4d499240d606f15b277a",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "ddf6391879324a75a40484af788c5b2c",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v2/33f91e7118fe4a6a837bc5d865b3b325"
+                    }
+                ],
+                "id": "7e26a02f1f894dd8baf9fe89bd5cb112",
+                "type": "volumev2"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "6d55b0cde9854324986bc47381205516",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:5000/v2.0"
+                    },
+                    {
+                        "id": "961dc2a4be474a84be3d03b54149000b",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:5000/v2.0"
+                    },
+                    {
+                        "id": "a92a17fd44f943209cb3c56f0b14366a",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:35357/v2.0"
+                    }
+                ],
+                "id": "856066acf752446885959ae3b3afeabc",
+                "type": "identity"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "5daf91dd704d4823b79e5abf1b043835",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8000/v1/"
+                    },
+                    {
+                        "id": "6cc98ac7f5b94ead9a46e880295b100e",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8000/v1/"
+                    },
+                    {
+                        "id": "7f80e32f20924f34b6a657c660f89c4b",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8000/v1/"
+                    }
+                ],
+                "id": "a82a1053fe694c4f96bec1b02bd5bd1b",
+                "type": "cloudformation"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "9820a2088b884ca788fdba4b177b45b4",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "e924eea422874fe7b67b80d5b4efc840",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    },
+                    {
+                        "id": "fe9d72f4d56c4374aa928516b07fddec",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:8776/v1/33f91e7118fe4a6a837bc5d865b3b325"
+                    }
+                ],
+                "id": "d1da09f079ce41a7bec66001f56ace4b",
+                "type": "volume"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "96cbbee68129493d8fa0342c9e29ec48",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9292"
+                    },
+                    {
+                        "id": "a3c9a853d983403abd4957fde9ceadc1",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9292"
+                    },
+                    {
+                        "id": "e1ab86271e5f413288b2d22e25707f24",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9292"
+                    }
+                ],
+                "id": "e16f5cd801e64ca9a9f686448b6b07dc",
+                "type": "image"
+            },
+            {
+                "endpoints": [
+                    {
+                        "id": "6f3e435817bb4591bff5c0afb249d13d",
+                        "interface": "public",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9696/"
+                    },
+                    {
+                        "id": "da848e85db224772a9dfb887a7b1a012",
+                        "interface": "internal",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9696/"
+                    },
+                    {
+                        "id": "e7ab16b20b8a4939a6d4ab83d551c3a5",
+                        "interface": "admin",
+                        "region": "RegionOne",
+                        "url": "http://10.124.165.99:9696/"
+                    }
+                ],
+                "id": "e95d4574eda84e2ead4c1cd1a7f7909c",
+                "type": "network"
+            }
+        ],
+        "expires_at": "2014-07-11T05:04:28.955616Z",
+        "extras": {},
+        "issued_at": "2014-07-10T05:04:28.955657Z",
+        "methods": [
+            "password"
+        ],
+        "project": {
+            "domain": {
+                "id": "default",
+                "name": "Default"
+            },
+            "id": "33f91e7118fe4a6a837bc5d865b3b325",
+            "name": "admin"
+        },
+        "roles": [
+            {
+                "id": "91c199d18fa24311acabc676c595aac9",
+                "name": "admin"
+            }
+        ],
+        "user": {
+            "domain": {
+                "id": "default",
+                "name": "Default"
+            },
+            "id": "ef42390c13b443579b4643d9c87f64dd",
+            "name": "admin"
+        }
+    }
+}
