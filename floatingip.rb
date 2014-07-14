@@ -7,38 +7,21 @@ compute_client = Fog::Compute.new(:provider => :openstack,
                                   :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/"  ,
                                   :openstack_tenant   => ENV['OS_TENANT_NAME'])
 
-servers = compute_client.servers
-
-p compute_client.list_servers
-
-servers.each do |server|
-  groups = server.service.list_security_groups(server.id).body['security_groups']
-
-  groups.each do |group|
-    p group['name']
-  end
-
-  net = compute_client.networks
-#  p net.server = server
-#  p net.methods
-end
-
-
-
-=begin
 net_cli = Fog::Network.new(:provider => :openstack,
                        :openstack_api_key  => ENV['OS_PASSWORD']  ,
                        :openstack_username => ENV['OS_USERNAME']  ,
                        :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/")
-#p net_cli.methods
-=end
+netids = net_cli.list_networks.body['networks'].map{|v| v['id']}
 
-#p net_cli.networks.all
+service = compute_client
+flavor = service.flavors.first
+image = service.images.first
+#server = service.servers.create(:name => 'fog-doc', :flavor_ref => flavor.id,
+#:image_ref => image.id,:nics => ["net_id" => netids[0]])
 
-p tmp = compute_client.list_flavors
+#net_cli.list_floating_ips.body['floatingips'].each do |aa|
+#  p aa
+#end
 
-net = Fog::Network.new(:provider => :openstack,
-                       :openstack_api_key  => ENV['OS_PASSWORD']  ,
-                       :openstack_username => ENV['OS_USERNAME']  ,
-                       :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/")
-p net.list_routers
+p fips = net_cli.list_floating_ips.body['floatingips'].map {|_| _['floating_ip_address']}
+#p service.associate_address(server.id,fips[0])

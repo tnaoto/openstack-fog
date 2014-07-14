@@ -7,11 +7,6 @@ compute_client = Fog::Compute.new(:provider => :openstack,
                                   :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/"  ,
                                   :openstack_tenant   => ENV['OS_TENANT_NAME'])
 
-
-net_cli = Fog::Network.new(:provider => :openstack,
-                       :openstack_api_key  => ENV['OS_PASSWORD']  ,
-                       :openstack_username => ENV['OS_USERNAME']  ,
-                       :openstack_auth_url => ENV['OS_AUTH_URL'] + "/tokens/")
-p netids = net_cli.list_networks.body['networks'].map{|v| v['id']}
-
-p compute_client.service
+compute_client.servers.each do |server|
+  p server.host_id
+end
